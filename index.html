@@ -1,0 +1,423 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="intro-overlay">
+    <div class="intro-content">
+      <div class="intro-name">Yahya Loulou</div>
+      <div class="intro-title">Web Developer</div>
+    </div>
+  </div>
+  
+  <div class="portfolio-space">
+    <div class="particles"></div>
+    <div class="hex-container">
+      <div class="hex-panel" id="about">
+        <div class="terminal-buttons">
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+        </div>
+        <div class="hex-content">
+          <h2>whoami</h2>
+          <p>$ cat about.json</p>
+          <p>{</p>
+          <p>  "name": "Yahya Loulou",</p>
+          <p>  "skills": ["JavaScript", "React", "Node.js", "next js"],</p>
+          <p>  "passion": "Building elegant solutions to complex problems"</p>
+          <p>}</p>
+          <p>$ wget resume.pdf</p>
+      <a href="./assets/CV.pdf" target="_blank" class="download-cv" download="cv.pdf">
+  <span class="download-icon">
+    <svg viewBox="0 0 24 24" width="18" height="18">
+      <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
+  </span>
+  Download CV
+</a>
+        </div>
+      </div>
+      
+      <div class="hex-panel" id="projects">
+        <div class="terminal-buttons">
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+        </div>
+        <div class="hex-content">
+          <h2>ls ./projects</h2>
+          <div class="filter-container">
+            <div class="framework-tabs">
+              <button class="framework-tab active" data-framework="react">React.js</button>
+              <button class="framework-tab" data-framework="nextjs">Next.js && javascript</button>
+            </div>
+            <div class="projects-container">
+              <!-- React Projects -->
+              <div class="project-group active" data-framework="react">
+                <div class="project-tabs">
+                  <button class="project-tab active" data-project="react1">E-Commerce</button>
+                  <button class="project-tab" data-project="react2">ToDoApp</button>
+                  <button class="project-tab" data-project="react3">Dashboard</button>
+                </div>
+                <div class="project-details">
+                  <div class="project-detail active" id="react1">
+                    <div class="project-header">
+                      <h3>React E-Commerce Platform</h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/mobilestore" target="_blank">GitHub</a>
+                        <a href="https://mobilestore-tau.vercel.app/" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/react/mobilestore/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/react/mobilestore/2.png" alt="Project preview 3" class="carousel-image">
+                        <img src="./myprojectsdata/react/mobilestore/3.png" alt="Project preview 2" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>A full-featured e-commerce platform mobile store built with React and redux .</p>
+                        <ul>
+                          <li>Responsive design with styled components</li>
+                          <li>Real-time cart updates and checkout process</li>
+                          <li>Integration with Stripe payment gateway</li>
+                        </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">React</span>
+                          <span class="tech-tag">Redux</span>
+                          <span class="tech-tag">Stripe</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-detail" id="react2">
+                    <div class="project-header">
+                      <h3>To Do App</h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/Todoapp" target="_blank">GitHub</a>
+                        <a href="https://todoapp-zeta-gold.vercel.app/" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/react/todoapp/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/react/todoapp/2.png" alt="Project preview 2" class="carousel-image">
+                        <img src="./myprojectsdata/react/todoapp/3.png" alt="Project preview 3" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>A Beautiful to do app with confetti and progress data.</p>
+                        <ul>
+                          <li>Responsive design components</li>
+                          <li>ability to set end time to the tasks to being uptodata</li>
+                          <li>dark mode and light mode toggle</li>
+                        </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">React</span>
+                          <span class="tech-tag">tailwind</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-detail" id="react3">
+                    <div class="project-header">
+                      <h3>Admin Dashboard</h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/Admin_dashboard" target="_blank">GitHub</a>
+                        <a href="https://admin-dashboard-beta-beige.vercel.app" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/react/admindashboard/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/react/admindashboard/2.png" alt="Project preview 2" class="carousel-image">
+                        <img src="./myprojectsdata/react/admindashboard/3.png" alt="Project preview 3" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>An admin dashboard built with React, featuring customizable charts and tables.</p>
+                        <ul>
+                          <li>Adding users and roles for each user</li>
+                          <li>Responsive design components</li>
+                          <li>Integration with Chart.js and React-Table</li>
+                        </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">React</span>
+                          <span class="tech-tag">Chart.js</span>
+                          <span class="tech-tag">React-Table</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Next.js Projects -->
+              <div class="project-group" data-framework="nextjs">
+                <div class="project-tabs">
+                  <button class="project-tab active" data-project="next1">landing page</button>
+                  <button class="project-tab" data-project="next2">RACE RENTALS</button>
+                  <button class="project-tab" data-project="next3">Car Game</button>
+                </div>
+                <div class="project-details">
+                  <div class="project-detail active" id="next1">
+                    <div class="project-header">
+                      <h3>Next.js landing page </h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/techlandingpage" target="_blank">GitHub</a>
+                        <a href="https://techlandingpage1.vercel.app/" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/nextjs/landing page/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/landing page/2.png" alt="Project preview 2" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/landing page/3.png" alt="Project preview 3" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>A landing page for tech company that's represent company features.</p>
+                        <ul>
+                          <li>design the website to like a game</li>
+                          <li>modern ui with styled component</li>
+                                                  </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">Next.js</span>
+                          <span class="tech-tag">react hooks</span>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-detail" id="next2">
+                    <div class="project-header">
+                      <h3>RACE RENTALS</h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/carrenting" target="_blank">GitHub</a>
+                        <a href="https://carrenting.vercel.app/" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/nextjs/rentcars/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/rentcars/2.png" alt="Project preview 2" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/rentcars/3.png" alt="Project preview 3" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>This project is a Luxury Race Track Car Rental Platform designed to provide an immersive and interactive experience for users looking to rent high-performance supercars </p>
+                        <ul>
+                          <li>Interactive Car Showcase</li>
+                          <li>Responsive Design</li>
+                          <li>Race Track Theme</li>
+                        </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">Vanilla JavaScript</span>
+                          <span class="tech-tag">SVG Graphics and Animations</span>
+                          <span class="tech-tag"> CSS Media Queries</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-detail" id="next3">
+                    <div class="project-header">
+                      <h3>Car Game</h3>
+                      <div class="project-links">
+                        <a href="https://github.com/yahealulu/car-game" target="_blank">GitHub</a>
+                        <a href="https://car-game-one-coral.vercel.app" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                    <div class="project-preview">
+                      <div class="image-carousel">
+                        <img src="./myprojectsdata/nextjs/cargame/1.png" alt="Project preview 1" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/cargame/2.png" alt="Project preview 2" class="carousel-image">
+                        <img src="./myprojectsdata/nextjs/cargame/3.png" alt="Project preview 3" class="carousel-image">
+                        <div class="carousel-nav">
+                          <div class="carousel-dot active"></div>
+                          <div class="carousel-dot"></div>
+                          <div class="carousel-dot"></div>
+                        </div>
+                      </div>
+                      <div class="project-description">
+                        <p>A Car Game using one html file includes the styles and javascript codes</p>
+                        <ul>
+                          <li>To win the race you must reach the finish line before time runs out. </li>
+                          <li>3d model for the car</li>
+                          <li>open world driving</li>
+                        </ul>
+                        <div class="project-tech">
+                          <span class="tech-tag">Vanilla javascript</span>
+                          <span class="tech-tag">html</span>
+                          <span class="tech-tag">inline css </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hex-panel" id="contact">
+        <div class="terminal-buttons">
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+        </div>
+        <div class="hex-content">
+          <h2>contact --info</h2>
+          <p>$ cat contact.json</p>
+          <p>{</p>
+          <p>  <a href="mailto:yahea.loulou@gmail.com" style="color: #8892b0; text-decoration: none;">"email": "yahea.loulou@gmail.com"</a>,</p>
+          <p>  <a href="https:/www.github.com/yahealulu/" target="_blank" style="color: #8892b0; text-decoration: none;">"github": "github.com/yahealulu"</a>,</p>
+          <p>  <a href="https:/www.linkedin.com/in/yahea-lulu-104597231" target="_blank" style="color: #8892b0; text-decoration: none;">"linkedin": "www.linkedin.com/in/yahea-lulu"</a>,</p>
+          <p>  <a href="https://wa.me/+963994608051" target="_blank" style="color: #8892b0; text-decoration: none;">"whatsapp": "+963994608051"</a></p>
+          <p>}</p>
+        </div>
+      </div>
+      
+      <div class="hex-panel" id="resume">
+        <div class="terminal-buttons">
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+          <div class="terminal-button"></div>
+        </div>
+        <div class="hex-content">
+          <h2>cat resume.txt</h2>
+          
+          <div class="resume-section">
+            <h3>Professional Experience</h3>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>React Front-end Web Developer</h4>
+                <span class="date">2024</span>
+              </div>
+              <div class="institution">Mad Solutions - Damascus, Syria</div>
+              <p class="description">About 3 months of training in React web development, building projects and deploying them. Worked on responsive design and modern React practices.</p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                
+                <h4>backend odoo developer  </h4>
+                <span class="date">2022 - 2023                </span>
+              </div>
+              <div class="institution">noptechs - Turkey</div>
+              <p class="description">implementation systems and customize odoo tools to suit
+                the client using python</p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>IT support specialist.
+                </h4>
+                <span class="date">2021 - 2022
+                </span>
+              </div>
+              <div class="institution">house of colors - Syria
+              </div>
+              <p class="description">IT supporting for the web application that used in mobile
+                application for house of colors problem solving and big
+                experience in printers systems.</p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>sales manger
+                </h4>
+                <span class="date">2019- 2021
+                </span>
+              </div>
+              <div class="institution">Golden mobile - syria
+                - Damascus, Syria</div>
+              <p class="description">selling mobile phones and accessories for clients and for
+                golden mobile vendors.
+                </p>
+            </div>
+
+            
+          </div>
+
+          <div class="resume-section">
+            <h3>Education & Certifications</h3>
+            
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>Bachelor of Information Technology Engineering</h4>
+                <span class="date">2019 - Current</span>
+              </div>
+              <div class="institution">Syrian Virtual University (SVU)</div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>building website using wordpress
+                </h4>
+                <span class="date">2023</span>
+              </div>
+              <div class="institution">mamdouh kaldas ,edrak platform
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>front end developer certificate
+                </h4>
+                <span class="date">2022</span>
+              </div>
+              <div class="institution">meta , coursera platform
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-header">
+                <h4>CEH V11
+                </h4>
+                <span class="date">2022</span>
+              </div>
+              <div class="institution">with hani alsayes coatch.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="nav-buttons">
+      <button class="nav-button active" data-section="about">about</button>
+      <button class="nav-button" data-section="projects">projects</button>
+      <button class="nav-button" data-section="resume">resume</button>
+      <button class="nav-button" data-section="contact">contact</button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
